@@ -16,6 +16,7 @@
     </parent>
 
     <modules>
+        <module>amoy-cloud-common</module>
         <module>amoy-cloud-eureka</module>
         <module>amoy-cloud-docs</module>
     </modules>
