@@ -5,15 +5,13 @@
     <parent>
         <groupId>com.amoy</groupId>
         <artifactId>amoy-cloud</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>1.0</version>
     </parent>
 
     <groupId>com.amoy</groupId>
     <artifactId>amoy-cloud-eureka</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>amoy-cloud-eureka</name>
-    <description>amoy-cloud-eureka</description>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -44,6 +42,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>${artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -24,3 +24,7 @@
 ```
 
 ```
+
+### 参考资料
+
+- [Spring Cloud（二）：服务注册与发现 Eureka【Finchley 版】](https://windmt.com/2018/04/15/spring-cloud-2-eureka/)

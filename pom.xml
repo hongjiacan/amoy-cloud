@@ -3,18 +3,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.amoy</groupId>
+    <artifactId>amoy-cloud</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
-    <groupId>com.amoy</groupId>
-    <artifactId>amoy-cloud</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>amoy-cloud</name>
-    <description>amoy-cloud</description>
+    <modules>
+        <module>amoy-cloud-eureka</module>
+        <module>amoy-cloud-docs</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
