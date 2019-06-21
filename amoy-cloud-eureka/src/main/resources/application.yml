@@ -5,10 +5,10 @@ spring:
   application:
     name: @pom.artifactId@
 
-#  security:
-#    user:
-#      name: root
-#      password: root
+  security:
+    user:
+      name: root
+      password: root
 
 eureka:
   instance:

@@ -12,10 +12,9 @@ import java.util.Date;
  * @create: 2019-06-20
  */
 @RestController
-@RequestMapping("/hello")
 public class HelloController {
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String hello(@RequestParam String name){
 
         return "Hello," + name + new Date();
