@@ -3,8 +3,6 @@ spring:
     name: @pom.artifactId@
 server:
   port: 8001
-  servlet:
-    context-path: /@pom.artifactId@
 
 eureka:
   client:
