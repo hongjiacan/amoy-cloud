@@ -1,2 +1,2 @@
 # amoy-cloud
-spring-cloud repo
+spring-cloud Greenwich.SR1

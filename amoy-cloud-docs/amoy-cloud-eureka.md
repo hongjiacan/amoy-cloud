@@ -1,10 +1,5 @@
 # amoy-cloud-eureka
 
-### 访问地址
-
-- http://localhost:8761/
-
-
 ### 相关配置
 
 - pom 引用
@@ -22,9 +17,24 @@
 
 - yml 配置
 ```
+server:
+  port: 8761
 
+spring:
+  application:
+    name: @pom.artifactId@
+
+  security:
+    user:
+      name: root
+      password: root
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 ```
-
-### 参考资料
-
-- [Spring Cloud（二）：服务注册与发现 Eureka【Finchley 版】](https://windmt.com/2018/04/15/spring-cloud-2-eureka/)
