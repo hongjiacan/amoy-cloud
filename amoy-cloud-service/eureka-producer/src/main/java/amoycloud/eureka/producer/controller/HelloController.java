@@ -23,6 +23,9 @@ public class HelloController {
 
         Wrapper<String> wrapper = helloService.sayHello(name);
 
+        if("666".equals(name)){
+            throw new RuntimeException();
+        }
         return wrapper;
     }
 

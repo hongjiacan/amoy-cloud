@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author: hjc
  * @create: 2019-06-25
  */
-@FeignClient(value = "eureka-producer",fallback = HelloFeignHystrix.class)
+@FeignClient(value = "eureka-producer", contextId = "hello", fallback = HelloFeignHystrix.class)
 public interface HelloFeignApi {
 
     @RequestMapping(value = "/sayHello")
     public Wrapper<String> sayHello(@RequestParam String name);
 
-    @RequestMapping("/sayGoodBye")
-    public Wrapper<String> sayGoodBye(@RequestParam String name);
+//    @RequestMapping("/sayGoodBye")
+//    public Wrapper<String> sayGoodBye(@RequestParam String name);
 }
