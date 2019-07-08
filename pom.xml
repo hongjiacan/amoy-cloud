@@ -21,6 +21,8 @@
         <module>amoy-cloud-eureka</module>
         <module>amoy-cloud-service</module>
         <module>amoy-cloud-service-api</module>
+        <module>amoy-cloud-turbine</module>
+        <module>amoy-cloud-hystrix-dashboard</module>
     </modules>
 
     <properties>

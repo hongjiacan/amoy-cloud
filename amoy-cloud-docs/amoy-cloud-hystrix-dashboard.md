@@ -13,11 +13,13 @@
 - Application 添加注解
 ```
 @EnableHystrixDashboard
-@EnableCircuitBreaker
+
 ```
 
 - yml 配置
 ```
+## 此处配置加在被监控的服务的工程里
+## 被监控的服务需开放 hystrix.stream
 management:
   endpoints:
     web:
@@ -27,4 +29,4 @@ management:
 
 ### 访问路径
 
-- [localhost:8002/hystrix](http://localhost:8002/hystrix)
+- [localhost:8100/hystrix](http://localhost:8100/hystrix)

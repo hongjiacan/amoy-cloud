@@ -18,6 +18,8 @@
 ```
 @ComponentScan(basePackages = "amoycloud")
 @EnableFeignClients(basePackages = "amoycloud")
+##启用断路器
+@EnableCircuitBreaker
 ```
 
 - FeignApi 添加注解

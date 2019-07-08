@@ -1,0 +1,26 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: @pom.artifactId@
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: turbine.stream
+
+turbine:
+  app-config: eureka-consumer
+  cluster-name-expression: new String("default")
+  combine-host-port: true
