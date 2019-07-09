@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>amoy-cloud-hystrix-dashboard</artifactId>
+    <artifactId>amoy-cloud-monitor</artifactId>
     <packaging>jar</packaging>
 
     <properties>

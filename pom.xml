@@ -22,7 +22,7 @@
         <module>amoy-cloud-service</module>
         <module>amoy-cloud-service-api</module>
         <module>amoy-cloud-turbine</module>
-        <module>amoy-cloud-hystrix-dashboard</module>
+        <module>amoy-cloud-monitor</module>
     </modules>
 
     <properties>
